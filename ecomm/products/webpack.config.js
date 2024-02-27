@@ -13,8 +13,10 @@ module.exports = {
       exposes: {
         // here we're renaming something , its an Alias 
         './ProductsIndex': './src/index'
-      }
+      }, 
+      shared: ['faker']
     }),
+
     // take a look of wathever files are coming out of our webpack process
     // will add all the script tags automatically
     new HtmlWebpackPlugin({
